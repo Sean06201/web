@@ -32,3 +32,4 @@ const timer = setInterval(() => {
         location.reload(); 
     }
 }, 1000);
+
