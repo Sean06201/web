@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodpanda - 系統塞車中</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panda-icon">🐼</div>
+        
+        <h1>哎呀！胖達遇到大塞車了...</h1>
+        <p class="subtitle">請放心，若您剛剛有付款，系統會自動核對並退還未成立的訂單款項，您的權益不會受損。</p>
+        
+        <div class="status-box">
+            <p id="dynamic-text">正在幫胖達機車加油...</p>
+        </div>
+        
+        <p class="timer">將在 <span id="countdown">30</span> 秒後自動重新連線</p>
+        <button onclick="location.reload()">立即重試</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
