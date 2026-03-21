@@ -1,0 +1,84 @@
+/* 重置基本樣式並將內容置中 */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* 中央的白色卡片區塊 */
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(215, 15, 100, 0.1);
+    max-width: 500px;
+    width: 90%;
+    border-top: 8px solid #d70f64; /* foodpanda 品牌粉紅色 */
+}
+
+/* 熊貓圖示與上下浮動動畫 */
+.panda-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+h1 {
+    color: #d70f64;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* 安撫文字樣式 */
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* 動態文字的底框 */
+.status-box {
+    background-color: #fff0f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #d70f64;
+    min-height: 24px;
+}
+
+.timer {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* 按鈕樣式 */
+button {
+    background-color: #d70f64;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b00c50; /* 滑鼠移過去變深粉紅 */
+}
+
+/* 定義浮動動畫 */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
